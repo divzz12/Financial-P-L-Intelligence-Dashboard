@@ -1,0 +1,19 @@
+// Total Actual Expense
+Actual Spend = SUM(Fact_GL_Actuals[amount_usd])
+
+// Total Budgeted Spend
+Budgeted Spend = SUM(Fact_Department_Budget[budgeted_amount_usd])
+
+// Budget Variance ($)
+Variance USD = [Actual Spend] - [Budgeted Spend]
+
+// Budget Variance (%)
+Variance % = DIVIDE([Variance USD], [Budgeted Spend], 0) * 100
+
+// Software Licensing Cost Inflation Flag
+Inflation Alert = 
+IF(
+    [Variance %] >= 15.0 && SELECTEDVALUE(Fact_GL_Actuals[department]) <> "Engineering",
+    "⚠️ 15% Cost Spike",
+    "Normal"
+)
