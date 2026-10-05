@@ -26,6 +26,14 @@ The finance department was bogged down by a highly manual monthly closing proces
 
 ---
 
+## 📊 Key Insights & Visualizations
+
+<img width="1474" height="704" alt="photo" src="https://github.com/user-attachments/assets/fe095c64-e449-423c-b419-fbe326154518" />
+
+
+---
+
+
 ## 💡 Key Insights Discovered
 
 * **Cost Inflation Alert**: Uncovered an unexpected **15% inflation in vendor software licensing costs** across non-engineering teams[cite: 3].
